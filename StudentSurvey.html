@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student survey</title>
+  </head>
+  <body>
+    <h1>Student Survey</h1>
+    <h2>Please take some time to complete our survey</h2>
+    <form action="">
+      <!-- required fields-->
+      <p>First Name <input required="true" type="text" /></p>
+      <p>Last Name <input required="true" type="text" /></p>
+      <p>Street Address <input required="true" type="text" /></p>
+      <p>State <input required="true" type="text" /></p>
+      <p>Zip code <input required="true" type="text" /></p>
+      <p>Telephone number <input required="true" type="text" /></p>
+      <p>Email <input required="true" type="email" name="Email" id="" /></p>
+      <p>Todays Date <input required="true" type="datetime" name="" id="" /></p>
+
+      <p>Please select which campus you visited</p>
+      <ul>
+        <li>George Mason University <input type="checkbox" name="" id="" /></li>
+        <li>
+          James Madison University <input type="checkbox" name="" id="" />
+        </li>
+      </ul>
+
+      <p>Please select what you liked most about that campus</p>
+      <ul>
+        <li>Students <input type="checkbox" name="" id="" /></li>
+        <li>Location <input type="checkbox" name="" id="" /></li>
+        <li>Campus <input type="checkbox" name="" id="" /></li>
+        <li>Atmosphere <input type="checkbox" name="" id="" /></li>
+        <li>Dorm rooms <input type="checkbox" name="" id="" /></li>
+        <li>Sports <input type="checkbox" name="" id="" /></li>
+      </ul>
+
+      <p>Tell us how you became interested in the university</p>
+      <p>
+        Friends or Family
+        <input type="radio" name="interested" id="" value="friends" />
+      </p>
+      <p>Television <input type="radio" name="interested" id="" /></p>
+      <p>Internet <input type="radio" name="interested" id="" /></p>
+      <p>Other <input type="radio" name="interested" id="" /></p>
+      <label for="recommend"
+        >how likely are you to recommend this campus to others</label
+      >
+      <select name="recommend" id="recommend">
+        <option value="very likely">Very Likely</option>
+        <option value="likely">Likely</option>
+        <option value="Unlikely">Unlikely</option>
+      </select>
+      <div>
+        <p>
+          Participate in our raffle!\nEnter 10 numbers(1-100) separated by
+          commas
+        </p>
+        <textarea name="raffle" id="raffle"></textarea>
+      </div>
+      <div>
+        <p>Additional comments</p>
+        <textarea name="comments" id="comments"></textarea>
+      </div>
+
+      <input type="submit" value="Finish the survey" />
+      <input type="reset" value="Reset survey" />
+    </form>
+  </body>
+</html>

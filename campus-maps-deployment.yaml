@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: campus-maps-deployment
+  labels:
+    app: campus-maps
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: campus-maps
+  template:
+    metadata:
+      labels:
+        app: campus-maps
+    spec:
+      containers:
+      - name: campus-maps
+        image: ulisesalmonte/campus-maps:v1
+        ports:
+        - containerPort: 80
+
