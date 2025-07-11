@@ -17,6 +17,7 @@ spec:
       containers:
       - name: campus-maps
         image: ulisesalmonte/campus-maps:v1
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
-
+        
